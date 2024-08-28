@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Rental App</string>
     <string name="discover_your">Discover Your</string>
+    <string name="forget_password">Forget Password ?</string>
 </resources>
