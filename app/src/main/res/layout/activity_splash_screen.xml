@@ -61,15 +61,19 @@
             app:layout_constraintTop_toBottomOf="@+id/splashTextTwo"
             tools:ignore="MissingConstraints" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/button"
             android:layout_width="385dp"
             android:layout_height="50dp"
             android:layout_marginTop="256dp"
-            android:text="Continue"
+            android:text="Get Started"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="@color/white"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/splashTextSmall"
-            tools:ignore="MissingConstraints" />
+            tools:ignore="MissingConstraints"
+            android:background="@drawable/btn_custom"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
