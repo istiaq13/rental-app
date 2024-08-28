@@ -29,9 +29,10 @@
             android:textColor="@color/black"
             android:textSize="43sp"
             android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/imageView"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="74dp" />
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/splashTextTwo"
@@ -41,9 +42,10 @@
             android:textColor="@color/black"
             android:textSize="43sp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="113dp"
-            tools:layout_editor_absoluteY="419dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/splashTextOne"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/splashTextSmall"
@@ -53,18 +55,21 @@
             android:textColor="@color/black"
             android:textSize="13sp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="145dp"
-            tools:layout_editor_absoluteY="488dp" />
+            app:layout_constraintEnd_toEndOf="@+id/splashTextTwo"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="@+id/splashTextTwo"
+            app:layout_constraintTop_toBottomOf="@+id/splashTextTwo"
+            tools:ignore="MissingConstraints" />
 
         <Button
             android:id="@+id/button"
             android:layout_width="385dp"
             android:layout_height="50dp"
+            android:layout_marginTop="256dp"
             android:text="Continue"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteY="632dp" />
-    
+            app:layout_constraintTop_toBottomOf="@+id/splashTextSmall"
+            tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
