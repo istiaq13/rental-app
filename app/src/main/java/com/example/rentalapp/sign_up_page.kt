@@ -1,27 +1,20 @@
 package com.example.rentalapp
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class authenticationMenu : AppCompatActivity() {
+class sign_up_page : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
-        setContentView(R.layout.activity_authentication_menu)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        setContentView(R.layout.activity_sign_up_page)
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.mainact)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
-        }
-        val signUpButton = findViewById<Button>(R.id.SignUp_button)
-        signUpButton.setOnClickListener {
-            val intent = Intent(this, sign_up_page::class.java)
-            startActivity(intent)
         }
     }
 }
