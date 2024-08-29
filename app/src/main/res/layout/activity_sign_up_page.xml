@@ -109,6 +109,7 @@
         android:layout_height="58dp"
         android:layout_marginTop="40dp"
         android:text="Sign Up"
+        android:background="@drawable/btn_custom"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/textView"

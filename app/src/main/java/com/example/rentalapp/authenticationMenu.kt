@@ -23,5 +23,10 @@ class authenticationMenu : AppCompatActivity() {
             val intent = Intent(this, sign_up_page::class.java)
             startActivity(intent)
         }
+        val loginButton = findViewById<Button>(R.id.login_button)
+        loginButton.setOnClickListener {
+            val intent = Intent(this, login_page::class.java)
+            startActivity(intent)
+        }
     }
 }
