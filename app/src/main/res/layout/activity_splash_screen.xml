@@ -62,7 +62,7 @@
             tools:ignore="MissingConstraints" />
 
         <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/button"
+            android:id="@+id/start_button"
             android:layout_width="385dp"
             android:layout_height="50dp"
             android:layout_marginTop="256dp"

@@ -103,12 +103,13 @@
         app:layout_constraintStart_toStartOf="@+id/checkBox2"
         app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button4"
         android:layout_width="374dp"
         android:layout_height="58dp"
         android:layout_marginTop="40dp"
         android:text="Sign Up"
+        android:textColor="@color/white"
         android:background="@drawable/btn_custom"
         app:layout_constraintEnd_toEndOf="@+id/textView"
         app:layout_constraintHorizontal_bias="1.0"
