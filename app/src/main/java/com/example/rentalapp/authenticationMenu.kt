@@ -18,11 +18,14 @@ class authenticationMenu : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        //signup page opens through this click event
         val signUpButton = findViewById<Button>(R.id.SignUp_button)
         signUpButton.setOnClickListener {
             val intent = Intent(this, sign_up_page::class.java)
             startActivity(intent)
         }
+        //login page opens through this click event
         val loginButton = findViewById<Button>(R.id.login_button)
         loginButton.setOnClickListener {
             val intent = Intent(this, login_page::class.java)

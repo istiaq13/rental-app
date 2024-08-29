@@ -20,6 +20,8 @@ class Splash_Screen : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        //authentication menu page opens through this click event
         val menuButton = findViewById<Button>(R.id.start_button)
         menuButton.setOnClickListener {
             val intent = Intent(this, authenticationMenu::class.java)
