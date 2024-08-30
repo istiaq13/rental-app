@@ -3,6 +3,7 @@ package com.example.rentalapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,11 +21,16 @@ class login_page : AppCompatActivity() {
         }
 
         //signup page opens through this click event
+        val makeAccButton: TextView = findViewById(R.id.make_acc)
 
-        /*val makeAccButton = findViewById<textView>(R.id.make_acc)
+        // Change cursor to hand when hovering over the TextView (not working)
+        makeAccButton.setOnHoverListener { v, event ->
+            v.isHovered = true
+            true
+        }
         makeAccButton.setOnClickListener {
             val intent = Intent(this, sign_up_page::class.java)
             startActivity(intent)
-        }*/
+        }
     }
 }
